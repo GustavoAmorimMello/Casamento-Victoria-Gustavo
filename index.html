@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamento-Victoria&Gustavo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Victoria & Gustavo</h1>
+        <nav>
+            <ul>
+                <li><a href="#bem-vindos">BEM VINDOS!</a></li>
+                <li><a href="#evento">O Evento</a></li>
+                <li><a href="#presenca">CONFIRMAÇÃO DE PRESENÇA</a></li>
+                <li><a href="#presentes">LISTA DE PRESENTES</a></li>
+                <li><a href="#local">LOCAL</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <!-- Seção Inicio -->
+        <section id="bem-vindos">
+            <h3>Vamos Casar!</h3>
+            <h2>15 DE AGOSTO DE 2026</h2>
+            <h3>Maricá, Rio de Janeiro</h3>
+            <h2>Bem Vindos ao nosso Casamento!</h2>
+            <p>O maior evento do ano está chegando! A gente vai se casar!!!<br>Estamos muito felizes! Estamos preparando esse dia com muito carinho<br> 
+                e gostaríamos de estar compartilhando esse momento com você!<br> 
+                Se você está aqui, é porque foi escolhido a dedo para estar nessa lista de pessoas importantes para nós!
+            </p>
+        <img src="images\victoria_gustavo_2.jpeg" alt="Foto do casal Victoria e Gustavo" class="banner-principal">
+        </section>
+        <section id="evento">
+            <h2>Sobre o Evento!</h2>
+            <h3>Atenção, atenção! Não desconecte dessa sessão porque aqui você vai encontrar as notícias mais atuais sobre a organização do nosso casamento!</h3>
+            <h2>O Casamento!</h2>
+            <h3>Olá a todos!!!</h3>
+            <p>O nosso casamento está chegando e estamos muito felizes em poder compartilhar esse momento com pessoas que amamos!!!<br>
+                Será um dia super especial e queremos compartilhar com todos vocês.<br>
+                Até aqui tivemos muito trabalho para que esse grande dia seja muito bem aproveitado por todos,
+                e para que possamos lembrar sempre desse momento como um ato de amor eterno.<br> 
+                Estamos muito ansiosos para que esse dia chegue logo, e que possamos estar todos reunidos desfrutando de um momento de celebração da vida.<br>
+                Até aqui Deus nos ajudou e tornou tudo isso possível. Agradecemos imensamente a todos os familiares a principalmente aos nossos pais,<br>
+                que estiveram conosco em todos os momentos e nos ajudando a tornar tudo isso possível.<br>
+                Esperamos que todos se divirtam e possam ter um tempo de festa e comunhão. Que esse dia seja lembrado para sempre e fique em nossa memória!
+            </p>
+        </section>
+        <section id="presenca">
+            <h2>CONFIRMAÇÃO DE PRESENÇA</h2>
+            <p>Para confirmar a sua presença no casamento, digite seu nome conforme consta no convite.</p>
+            <form id="form-presenca">
+                <div class="campo-grupo">
+                    <label for="nome-convidado">Nome Completo:</label>
+                    <input type="text" id="nome-convidado" placeholder="Digite seu nome aqui..." required>
+                </div>
+                <button type="button" id="btn-confirmar" class="botao">Verificar na Lista</button>
+            </form>
+
+            <p id="mensagem-feedback"></p>
+        </section>
+        <section id="presentes">
+            <h2>Aqui separamos um espaço para você nos presentear!</h2>
+            <h3>Clique em um link abaixo e seja redirecionado ao nosso site de presentes!</h3>
+            <a href="https://listas.pontofrio.com.br/GUSTAVOEVICTORIA" class="botao" target="_blank" rel="noopener noreferrer">Lista de Presentes Ponto Frio</a>
+            <a href="https://lista.camicado.com.br/victoriatavaresegustavo" class="botao" target="_blank" rel="noopener noreferrer">Lista de Presentes Camicado</a>
+        </section>
+         <section id="local">
+            <h2>Veja abaixo o local do nosso evento!</h2>
+            <div class="local-container">
+                <div class="local-detalhes">
+                    <h3>Maricá Garden Lounge</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> R. Gerânio, 5/6 - Condado de Maricá</p>
+                    <p>Maricá, Rio de Janeiro - CEP: 24905-340</p>
+                    <p><strong>Horário:</strong> A partir das 14:00h</p>
+            
+                    <a href="https://maps.app.goo.gl/BAgWooXPTMBUeJh17" target="_blank" class="botao">
+                        Como Chegar (Google Maps)
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+    <div class="footer-content">
+        <p class="frase-final">"Assim, todos que virem esse milagre entenderão o que ele significa: o Senhor fez isso, o santo de Israel o criou. Isaias 41:20."</p>
+        <div class="divider"></div>
+        <h3>Victoria & Gustavo</h3>
+        <p class="data-casamento">15 de Agosto de 2026 • Maricá, RJ</p>
+        
+        <div class="creditos">
+            <p>Desenvolvido com ❤️ por <strong>Gustavo & Victoria</strong></p>
+            
+        </div>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

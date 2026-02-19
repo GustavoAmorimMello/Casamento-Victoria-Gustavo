@@ -1,0 +1,228 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f5f0;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Fonte elegante para os títulos */
+    color: #556b2f; /* Um tom verde oliva para combinar com o estilo Boho */
+    margin-bottom: 15px; /* Adiciona um espacinho abaixo de cada título */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #556b2f;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 8px 16px;      /* Cria um espaço ao redor do texto para o fundo aparecer */
+    transition: 0.3s;       /* Faz a cor mudar de forma suave, não instantânea */
+    border-radius: 4px;    /* Deixa os cantos do fundo levemente arredondados */
+}
+
+nav ul li a:hover {
+    background-color: #808b61; /* O verde oliva */
+    color: #ffffff;            /* Mudamos o texto para branco para ficar legível sobre o marrom */
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Estilo para a imagem de destaque */
+.banner-principal {
+    width: 100%;           /* Tenta ocupar 100% do espaço disponível */
+    max-width: 800px;      /* MAS, nunca passa de 800 pixels de largura (trava o tamanho em telas grandes) */
+    height: auto;          /* Mantém a proporção da imagem para ela não ficar "esmagada" */
+    display: block;        /* Remove um espacinho branco chato que fica embaixo de imagens por padrão */
+    margin: 40px auto;     /* 40px de espaço em cima/embaixo e 'auto' nas laterais para CENTRALIZAR */
+    border-radius: 8px;    /* (Opcional) Arredonda os cantos para um visual mais suave */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* (Opcional) Uma sombra suave para dar destaque */
+}
+
+/* Isso seleciona apenas as seções PARES (2, 4, 6...) */
+section:nth-of-type(even) {
+    background-color: #fcf9f5; /* Um bege um pouco mais escurinho que o fundo original */
+}
+
+.botao {
+    display: inline-block;     /* Permite dar tamanho e margem como se fosse um bloco */
+    background-color: #556b2f; /* O mverde oliva do estilo Boho */
+    color: white;              /* Cor do texto */
+    padding: 15px 30px;        /* Espaço interno (engorda o botão) */
+    text-decoration: none;     /* Remove o sublinhado de link */
+    border-radius: 5px;        /* Deixa as pontas levemente arredondadas */
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;          /* Deixa a mudança de cor suave */
+}
+
+.botao:hover {
+    background-color: #808b61; /* Fica um marrom mais escuro ao passar o mouse */
+    transform: translateY(-3px); /* O botão dá um leve "pulo" para cima */
+}
+
+/* Centralizando o formulário e definindo largura máxima */
+#form-presenca {
+    max-width: 450px;       /* Evita que o campo fique largo demais em monitores grandes */
+    margin: 30px auto;      /* Centraliza o formulário na seção */
+    display: flex;
+    flex-direction: column; /* Coloca label, input e botão um abaixo do outro */
+    gap: 15px;              /* Espaço entre os elementos do formulário */
+    text-align: left;       /* Alinha os labels à esquerda para melhor leitura */
+}
+
+/* Estilizando o grupo do campo (Label + Input) */
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: bold;
+    color: #556b2f;
+}
+
+/* Estilo do campo de texto (Input) */
+#nome-convidado {
+    padding: 12px 15px;
+    border: 1px solid #556b2f;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+/* Efeito ao clicar no campo para digitar */
+#nome-convidado:focus {
+    outline: none;
+    border: 2px solid #556b2f;
+    box-shadow: 0 0 5px rgba(139, 94, 60, 0.3);
+}
+
+/* Estilo para a mensagem de feedback que aparecerá via JS */
+#mensagem-feedback {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    min-height: 27px; /* Mantém o espaço reservado mesmo vazio */
+    transition: all 0.3s ease; /* Faz a mensagem aparecer suavemente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#local {
+    padding: 80px 20px;
+    background-color: #fcf9f5; /* Um tom off-white suave */
+    text-align: center;
+}
+
+.local-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(139, 94, 60, 0.1);
+    border: 1px solid #e0d5c8;
+}
+
+.local-detalhes h3 {
+    color: #556b2f;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.local-detalhes p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Ajuste no botão para destaque */
+#local .botao {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+#local .botao:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #556b2f; /* O marrom escuro que você definiu para o hover */
+    color: #ffffff;
+    padding: 60px 20px 20px 20px;
+    text-align: center;
+    margin-top: 50px; /* Garante que o rodapé não grude na seção anterior */
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.frase-final {
+    font-style: italic;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.divider {
+    width: 50px;
+    height: 2px;
+    background-color: #f4f5f0;
+    margin: 20px auto;
+}
+
+footer h3 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #f4f5f0;
+}
+
+.data-casamento {
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.creditos {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.creditos strong {
+    color: #fcf9f5;
+}
