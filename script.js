@@ -7,7 +7,7 @@ const listaVIP = [
     "BRUNO BARRETO","ISABELA","LUCAS BOMPET","VICTOR ANDRADE","RICARDO","AFFONSO","BIA","AMAURI","RAQUEL","LUCAS PEREIRA","MARIANA","VIVIANE","MARCELO","CRISTIANE","FABIO","SIMONE","ADRIANA",
     "ALAIDE","VIVIANE","EDUARDO","LOURDES", "MARCELA","GUSTAVO", "MANOELA", "CLAUDIO","ZECA","JOZELIA","LUIZA","ALMIRO","NAIRA","DANIEL","BRUNA","MABEL","JAMYNE","LEO","VANIA","ODILIA","CLAUDIO",
     "CAE","ELO","GERALDO","JOVIRIA","MARCINHO","ROGERIO","SILVANA","LUZIA","FLAVIA","GIGI","CHARLES","GIZELLE","TATIANA","ANDREIA","GERALDO","CIRLEY","TANIA","DIEGO","MARILDA","ROGERIA","ARCANJO",
-    "TEANE","THAIZINHA","THAIS","NATHALIA","ALEXANDRE","GUILHERME","MANOEL","VILMA","FELIPE","GABRIELA","MANOELA"
+    "TEANE","THAIZINHA","THAIS","NATHALIA FERRAO","ALEXANDRE","GUILHERME","MANOEL","VILMA","FELIPE","GABRIELA","MANOELA"
     // Adicione os nomes sempre em LETRAS MAIÚSCULAS para facilitar a busca depois
 ];
 
@@ -57,4 +57,5 @@ btnConfirmar.addEventListener('click', function() {
         mensagemFeedback.innerText = "Desculpe, este nome não consta na lista de convidados. Verifique a grafia ou entre em contato com os noivos.";
         mensagemFeedback.style.color = "red";
     }
+
 });
