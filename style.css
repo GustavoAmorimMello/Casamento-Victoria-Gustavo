@@ -84,56 +84,6 @@ section:nth-of-type(even) {
     transform: translateY(-3px); /* O botão dá um leve "pulo" para cima */
 }
 
-/* Centralizando o formulário e definindo largura máxima */
-#form-presenca {
-    max-width: 450px;       /* Evita que o campo fique largo demais em monitores grandes */
-    margin: 30px auto;      /* Centraliza o formulário na seção */
-    display: flex;
-    flex-direction: column; /* Coloca label, input e botão um abaixo do outro */
-    gap: 15px;              /* Espaço entre os elementos do formulário */
-    text-align: left;       /* Alinha os labels à esquerda para melhor leitura */
-}
-
-/* Estilizando o grupo do campo (Label + Input) */
-.campo-grupo {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-label {
-    font-weight: bold;
-    color: #556b2f;
-}
-
-/* Estilo do campo de texto (Input) */
-#nome-convidado {
-    padding: 12px 15px;
-    border: 1px solid #556b2f;
-    border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    background-color: #fff;
-    transition: 0.3s;
-}
-
-/* Efeito ao clicar no campo para digitar */
-#nome-convidado:focus {
-    outline: none;
-    border: 2px solid #556b2f;
-    box-shadow: 0 0 5px rgba(139, 94, 60, 0.3);
-}
-
-/* Estilo para a mensagem de feedback que aparecerá via JS */
-#mensagem-feedback {
-    margin-top: 20px;
-    font-weight: 600;
-    font-size: 16px;
-    min-height: 27px; /* Mantém o espaço reservado mesmo vazio */
-    transition: all 0.3s ease; /* Faz a mensagem aparecer suavemente */
-    padding: 10px;
-    border-radius: 5px;
-}
 
 #local {
     padding: 80px 20px;
