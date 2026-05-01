@@ -1,13 +1,9 @@
 
+// javascript removido pois a caixa de confirmacao através do google sheets foi substituida pelo link direto
+
 // Esta é a sua base de dados de convidados
 const listaVIP = [
-    "VICTORIA SILVA","GUSTAVO AMORIM","GABRIEL AMORIM","MARILEZIA AMORIM","VANTOIL MAGALHAES","ELIANA", "ELAINE","MARCOS","CAIO","ELUIZA","CALEBE","EDILEA","EDSON VANDER",
-    "NATHALIA","PEDRINHO","SARAH","FHELIPE","PAULO","ISRAEL","PAULA","FRANCESCO","ROSANA","ANDREIA","THAINA","EDSON","ELENITA","BRUNO","VANDER","GEISILANE","JENNIFER","MAICON","LUCAS",
-    "TATIANA","MAURICIO","HELENA","BETINHO","PHELIPE","THAYANA","JOSI MELO","TIAGO","JOAO","GABY","CRISTIANE","FERNANDO","MANOELA","NEI","ADRIANA","JORGE","CLAUDIA","TELMA","MATEUS","LARAH",
-    "BRUNO BARRETO","ISABELA","LUCAS BOMPET","VICTOR ANDRADE","RICARDO","AFFONSO","BIA","AMAURI","RAQUEL","LUCAS PEREIRA","MARIANA","VIVIANE","MARCELO","CRISTIANE","FABIO","SIMONE","ADRIANA",
-    "ALAIDE","VIVIANE","EDUARDO","LOURDES", "MARCELA","GUSTAVO", "MANOELA", "CLAUDIO","ZECA","JOZELIA","LUIZA","ALMIRO","NAIRA","DANIEL","BRUNA","MABEL","JAMYNE","LEO","VANIA","ODILIA","CLAUDIO",
-    "CAE","ELO","GERALDO","JOVIRIA","MARCINHO","ROGERIO","SILVANA","LUZIA","FLAVIA","GIGI","CHARLES","GIZELLE","TATIANA","ANDREIA","GERALDO","CIRLEY","TANIA","DIEGO","MARILDA","ROGERIA","ARCANJO",
-    "TEANE","THAIZINHA","THAIS","NATHALIA FERRAO","ALEXANDRE","GUILHERME","MANOEL","VILMA","FELIPE","GABRIELA","MANOELA"
+    
     // Adicione os nomes sempre em LETRAS MAIÚSCULAS para facilitar a busca depois
 ];
 
@@ -33,7 +29,7 @@ btnConfirmar.addEventListener('click', function() {
         mensagemFeedback.style.color = "blue";
 
         // URL que você copiou do Google Apps Script
-        const urlPlanilha = "https://script.google.com/macros/s/AKfycbw6TI56aK1QtMWwtbRj7IcGGzov2tBO8kxWDG1WYld1n9pXTKyfTDwMl3lWCihTi3aJ/exec";
+        const urlPlanilha = "inserir link do google sheets";
 
         // Enviando os dados para o Google Sheets
         fetch(urlPlanilha, {
@@ -57,5 +53,4 @@ btnConfirmar.addEventListener('click', function() {
         mensagemFeedback.innerText = "Desculpe, este nome não consta na lista de convidados. Verifique a grafia ou entre em contato com os noivos.";
         mensagemFeedback.style.color = "red";
     }
-
 });
